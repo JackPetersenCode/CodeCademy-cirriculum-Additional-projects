@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <!-- Add your head block below: -->
+{% block head %}
+{% endblock %}
+</head>
+
+<body>
+  {% block sidebar %}
+        <ul class="sidebar-nav">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'ingredientlist' %}">Ingredients</a></li>
+          <li><a href="{% url 'menuitemlist' %}">Menu Items</a></li>
+          <li><a href="{% url 'reciperequirementlist' %}">Recipe Requirements</a></li>
+          <li><a href="{% url 'purchaselist' %}">Purchases</a></li>
+          <li><a href="{% url 'reports' %}">Reports</a></li>
+          <li><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+     {% endblock %}
+  <h1>Welcome to Django Delights! {{ name }}</h1>
+  {% block content %}
+  {% endblock %}
+</body>

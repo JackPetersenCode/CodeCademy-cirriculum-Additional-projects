@@ -1,0 +1,27 @@
+{% extends 'inventory/base.html' %}
+<!-- Add your code below: -->
+{% load static %}
+{% block head %}
+{% endblock %}
+{% block content %}
+<p>Welcome, {{ name }}!</p>
+<p>Here is the current list of menu items:</p>
+<table>
+<tr>
+{% for menu_item in menu_items %}
+  <th>{{ menu_item.title }}</th>
+{% endfor %}
+</tr>
+<tr>
+  {% for menu_item in menu_items %}
+    <td style="vertical-align:top">
+    {% for recipe_requirement in menu_item.reciperequirement_set.all %}
+      <ul>
+        <li>{{ recipe_requirement.ingredient }}</li>
+      </ul>
+    {% endfor %}
+    </td>
+  {% endfor %}
+</tr>
+</table>
+{% endblock %}

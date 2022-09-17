@@ -1,0 +1,31 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 40px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-family: "Garamond", serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h4 {
+  vertical-align: top;
+}
+
+table {
+  vertical-align: top;
+}
+
+td {
+  vertical-align: top;
+  text-align:center;
+}

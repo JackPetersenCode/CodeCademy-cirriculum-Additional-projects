@@ -1,0 +1,22 @@
+# Django Delights Inventory Tracker
+
+    Django full stack application, DTL/html/css front-end with a Django sqlite database. Application is a restaurant inventory system, where users can login in,
+    make purchases, and the inventory will update dynamically. Users can also look up a cost/revenue report.
+
+## User Login Information
+
+**Username**: click on 'register' if you are a new user
+
+**Password**: click on 'register' if you are a new user
+
+## Get Started
+
+PythonAnywhere.com link:
+
+http://jackpetersencode.pythonanywhere.com/
+
+```bash
+python manage.py runserver
+```
+
+Navigate to [this url](http://localhost:8000/).

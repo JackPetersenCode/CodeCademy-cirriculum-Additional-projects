@@ -1,0 +1,26 @@
+<h1>Minesweeper page</h1>
+<header>
+    <script src="../minesweeper_script.js" async></script>
+</header>
+<body>
+    <label for="gridsize">Be best, pick a grid size: </label>
+    <input type="text" name="gridsize" id="gridsize"/>
+    <label for="numberofbombs">Shut up, pick number of bombs: </label>
+    <input type="text" name="numberofbombs" id="numberofbombs"/>
+
+    <label for="row">pick a row: </label>
+    <input type="text" name="row" id="row" />
+    <label for="row">pick a col: </label>
+    <input type="text" name="col" id="col" />
+    
+    <table class="table" id="apiTable">
+    </tr>
+    {% for item in attractions|dictsort:'homeState.stateName' %}
+    <tr>
+      <td>{{ item.attractionName }}</td>
+      <td>{{ item.homeState }}</td>
+      <td><a href="{% url 'details' item.homeState|slugify %}">State Details</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+</body>

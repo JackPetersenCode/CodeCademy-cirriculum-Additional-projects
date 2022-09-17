@@ -1,0 +1,20 @@
+{% extends './base.html' %}
+{% block content %}
+{% load static %}
+<h2>Purchase List</h2>
+<a href="{% url 'purchasecreate' %}"><button class="btn">Add a Purchase</button></a>
+<table id="purchases">
+  <tr>
+    <th>Menu Item</th>
+    <th>Timestamp</th>
+  </tr> 
+  {% for purchase in purchase_list %}
+    <tr>
+      <td>{{ purchase.menu_item }}</td>
+      <td>{{ purchase.timestamp }}</td>
+      <td><a href="{% url 'purchaseupdate' purchase.id %}"><button>Edit</button></a></td>
+      <td><a href="{% url 'purchasedelete' purchase.id %}"><button>Delete</button></a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

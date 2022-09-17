@@ -1,0 +1,6 @@
+create database?
+models?
+users can register as a users
+and also as business owners, and create
+their own restaurant profile, which is a 'restaurant' model
+with attributes like 'rating', 'picture', 'hours', phone, website, reviews, menu

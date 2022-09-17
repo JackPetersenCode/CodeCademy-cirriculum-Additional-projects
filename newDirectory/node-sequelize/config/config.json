@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "petejackerson",
+    "password": "redsox45",
+    "database": "node_sequelize",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "petejackerson",
+    "password": "redsox45",
+    "database": "node_sequelize",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "petejackerson",
+    "password": "redsox45",
+    "database": "node_sequelize",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
